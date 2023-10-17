@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntidadesCompartidas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contraseña" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UsuarioLog" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="Categorias">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Categorias" nillable="true" type="tns:Categorias" />
+  <xs:complexType name="Juegos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Dificultad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaC" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ListadoPreguntas" nillable="true" type="tns:ArrayOfPreguntas" />
+      <xs:element minOccurs="0" name="UnUsuario" nillable="true" type="tns:Usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Juegos" nillable="true" type="tns:Juegos" />
+  <xs:complexType name="ArrayOfPreguntas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Preguntas" nillable="true" type="tns:Preguntas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPreguntas" nillable="true" type="tns:ArrayOfPreguntas" />
+  <xs:complexType name="Preguntas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ListadoRespuestas" nillable="true" type="tns:ArrayOfRespuestas" />
+      <xs:element minOccurs="0" name="Puntaje" type="xs:int" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnaCategoria" nillable="true" type="tns:Categorias" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Preguntas" nillable="true" type="tns:Preguntas" />
+  <xs:complexType name="ArrayOfRespuestas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Respuestas" nillable="true" type="tns:Respuestas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRespuestas" nillable="true" type="tns:ArrayOfRespuestas" />
+  <xs:complexType name="Respuestas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoInterno" type="xs:int" />
+      <xs:element minOccurs="0" name="Resultado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TextoR" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Respuestas" nillable="true" type="tns:Respuestas" />
+  <xs:complexType name="ArrayOfJuegos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Juegos" nillable="true" type="tns:Juegos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJuegos" nillable="true" type="tns:ArrayOfJuegos" />
+  <xs:complexType name="Jugar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaHora" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Puntaje" type="xs:int" />
+      <xs:element minOccurs="0" name="UnJuego" nillable="true" type="tns:Juegos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Jugar" nillable="true" type="tns:Jugar" />
+  <xs:complexType name="ArrayOfJugar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Jugar" nillable="true" type="tns:Jugar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJugar" nillable="true" type="tns:ArrayOfJugar" />
+</xs:schema>

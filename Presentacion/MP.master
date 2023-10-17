@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MP.master.cs" Inherits="MP" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            width: 21%;
+        }
+        .auto-style1 {
+            width: 100%;
+            height: 428px;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            width: 21%;
+            height: 48px;
+        }
+        </style>
+</head>
+<body style="height: 450px">
+    <form id="form1" runat="server">
+            <table align="left" class="auto-style1">
+            <tr>
+            <td class="auto-style3">
+                        <asp:Button id="BtnSalir" runat="server" Text="Desloguearse" 
+                            onclick="BtnSalir_Click"/>
+                        <br />
+                    </td>
+                    <td rowspan="3" class="auto-style2">
+                       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+                           <asp:Label ID="lblError" runat="server"></asp:Label>
+         <br />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            <tr>
+            <td class="style4">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Text="UsuarioLogueado:"></asp:Label>
+&nbsp; 
+&nbsp;<asp:Label ID="lblUsuarioLogueado" runat="server"></asp:Label>
+                </td>
+                </tr>
+            <tr>
+            <td class="style4">
+                       <asp:TreeView ID="Menu" runat="server" ShowLines="True" OnSelectedNodeChanged="Menu_SelectedNodeChanged">
+                            <Nodes>
+                              <asp:TreeNode Text="Mantenimientos" Value="Mantenimientos">
+                                    <asp:TreeNode NavigateUrl="~/ABMUsuarios.aspx" Text="ABMUsuarios" 
+                                        Value="ABMUsuarios"></asp:TreeNode>
+                                    <asp:TreeNode Text="ABMJuegos" 
+                                        Value="ABMJuegos" NavigateUrl="~/ABMJuegos.aspx"></asp:TreeNode>
+                                     <asp:TreeNode Text="Alta Preguntas" 
+                                        Value="AltaPreguntas" NavigateUrl="~/AltaPreguntas.aspx"></asp:TreeNode>
+                                      <asp:TreeNode Text="ManejoPreguntasdeUnJuego" 
+                                        Value="ManejoPreguntasdeUnJuego" NavigateUrl="~/ManejoPreguntasdeUnJuego.aspx"></asp:TreeNode>
+                                     <asp:TreeNode Text="ABMCategorias" 
+                                        Value="ABMCategorias" NavigateUrl="~/ABMCategorias.aspx"></asp:TreeNode>
+                              </asp:TreeNode>
+                                <asp:TreeNode Text="Listados" Value="Listados">
+                                    <asp:TreeNode NavigateUrl="~/ListadoSinAsignacion.aspx" Text="ListadoSinAsignacion" 
+                                        Value="ListadoSinAsignacion"></asp:TreeNode>
+                                    </asp:TreeNode>
+                            </Nodes>
+                        </asp:TreeView>
+                    </td>
+                </tr>
+            </table>
+           
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+    </form>
+</body>
+</html>
+

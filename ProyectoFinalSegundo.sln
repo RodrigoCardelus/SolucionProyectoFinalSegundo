@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntidadesCompartidas", "EntidadesCompartidas\EntidadesCompartidas.csproj", "{8143357E-74AC-4243-8B64-614278AFE0B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{70C02CF5-9FB6-4ED3-A14A-6C9B858E00C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{6216B3D9-0B6F-441C-BD75-ED9D500E1BF9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Presentacion(1)", "Presentacion\", "{2E581126-1A54-438B-BB25-5DAA9A95396D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56126"
+		Debug.AspNetCompiler.PhysicalPath = "Presentacion\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56126\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56126"
+		Release.AspNetCompiler.PhysicalPath = "Presentacion\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56126\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56126"
+		SlnRelativePath = "Presentacion\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{DA653D1B-6A8E-4B62-A69C-A2B5637CD076} = {DA653D1B-6A8E-4B62-A69C-A2B5637CD076}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevicioWCF", "WcfService1\SevicioWCF.csproj", "{DA653D1B-6A8E-4B62-A69C-A2B5637CD076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8143357E-74AC-4243-8B64-614278AFE0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8143357E-74AC-4243-8B64-614278AFE0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8143357E-74AC-4243-8B64-614278AFE0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8143357E-74AC-4243-8B64-614278AFE0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C02CF5-9FB6-4ED3-A14A-6C9B858E00C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C02CF5-9FB6-4ED3-A14A-6C9B858E00C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C02CF5-9FB6-4ED3-A14A-6C9B858E00C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C02CF5-9FB6-4ED3-A14A-6C9B858E00C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6216B3D9-0B6F-441C-BD75-ED9D500E1BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6216B3D9-0B6F-441C-BD75-ED9D500E1BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6216B3D9-0B6F-441C-BD75-ED9D500E1BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6216B3D9-0B6F-441C-BD75-ED9D500E1BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E581126-1A54-438B-BB25-5DAA9A95396D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E581126-1A54-438B-BB25-5DAA9A95396D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E581126-1A54-438B-BB25-5DAA9A95396D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E581126-1A54-438B-BB25-5DAA9A95396D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DA653D1B-6A8E-4B62-A69C-A2B5637CD076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA653D1B-6A8E-4B62-A69C-A2B5637CD076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA653D1B-6A8E-4B62-A69C-A2B5637CD076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA653D1B-6A8E-4B62-A69C-A2B5637CD076}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
